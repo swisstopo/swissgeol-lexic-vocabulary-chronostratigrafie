@@ -1,0 +1,26 @@
+name: Create a GitHub Release for the new version of Chronostratigrafie
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  create_release:
+    permissions: write-all
+    runs-on: ubuntu-latest
+
+    if: "github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'"
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Create the GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ github.event.pull_request.title }}
+          body: ${{ github.event.pull_request.body }}
+          tag: v${{ github.event.pull_request.number }}
+          commit: ${{ github.event.pull_request.merge_commit_sha }}
+          makeLatest: true

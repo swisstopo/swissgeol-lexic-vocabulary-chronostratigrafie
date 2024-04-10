@@ -1,0 +1,24 @@
+name: Publish the new Chronostratigrafie RDF to GraphDB/Public
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  publish_gps:
+    runs-on: ubuntu-latest
+
+    if: "github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'"
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Upload file via PUT to graphdb-gps
+        env:
+          FILE_PATH: ./chronostratigrafie.rdf # percorso del file che vuoi caricare
+          PUT_URL: https://dev-graphdbgps.swissgeol.ch/publish/chronostratigraphy_swisstopo_public_core?context=https://lexic.swissgeol.ch
+          TOKEN: ${{ secrets.LEXIC_CONTROLLED_VOCABULARIES_GRAPHDB_GPS_TOKEN }}
+        run: |
+          curl -X PUT -T $FILE_PATH -H "Authorization: Bearer $TOKEN" $PUT_URL
