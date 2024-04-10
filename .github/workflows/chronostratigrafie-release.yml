@@ -10,7 +10,7 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
 
-    if: "github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'"
+    if: "github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'testing-pipeline'"
 
     steps:
       - name: Checkout the repository
