@@ -1,0 +1,2576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="https://lexic.swissgeol.ch#"
+	xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Phanerozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Phanerozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Phanerozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Phanérozoïque</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Fanerozoico</skos:prefLabel>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Proterozoic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#eon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Chronostratigraphy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<skos:prefLabel xml:lang="en">Chronostratigraphy</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Paleozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Paleozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Paläozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Paléozoïque</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Paleozoico</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Primary</skos:altLabel>
+	<skos:altLabel xml:lang="de">Primär</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Phanerozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#era"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Phanerozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Cenozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">encompasses both the Quaternary and "Tertiary" (Neogene + Paleogene)</skos:scopeNote>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Cenozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Känozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Cénozoïque</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Cenozoico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Phanerozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Tertiary"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#era"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Phanerozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Mesozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Mesozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mesozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Mésozoïque</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Mesozoico</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Secondary</skos:altLabel>
+	<skos:altLabel xml:lang="de">Sekundär</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Phanerozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#era"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Proterozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Proterozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Proterozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Protérozoïque</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Proterozoico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Precambrian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Archean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#eon"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Precambrian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Phanerozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Precambrian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Precambrian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Präkambrium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Précambrien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Precambriano</skos:prefLabel>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Proterozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Archean"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Hadean"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Proterozoic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hadean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#super-eon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Archean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Archean</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Archaikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Archéen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Archeano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Precambrian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hadean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#eon"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Proterozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#early_Paleozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">early Paleozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Paläozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Paléozoïque précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Paleozoico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Cambrian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cambrian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-era"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#late_Paleozoic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Paleozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Paläozoikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Paléozoïque tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Paleozoico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-era"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Paleogene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Paleogene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Paläogen</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Paléogène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Paleogene</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Quaternary">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Quaternary</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Quartär</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Quaternaire</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Quaternario</skos:prefLabel>
+	<skos:changeNote xml:lang="en">base moved back in 2009 to encompass the Gelasian</skos:changeNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Holocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Quaternary"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Old_Quaternary"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Holocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Neogene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Neogene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Neogen</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Néogène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Neogene</skos:prefLabel>
+	<skos:hiddenLabel>Jungtertiär</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Tertiary">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Tertiary</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tertiär</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tertiaire</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Terziario</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cenozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Cretaceous">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Cretaceous</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Kreide</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Crétacé</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Cretaceo</skos:prefLabel>
+	<skos:hiddenLabel>Crétacique</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#middle_Cretaceous"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Triassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Triassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Trias</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Trias</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Triassico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Werfenian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Scythian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Jurassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Jurassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Jura</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Jurassique</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Giurassico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Mesozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Oligocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Oligocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Oligozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Oligocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Oligocene</skos:prefLabel>
+	<skos:hiddenLabel>Oligocaen</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Rupelian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Stampian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Sannoisian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Rupelian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Paleocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Paleocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Paleozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Paléocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Paleocene</skos:prefLabel>
+	<skos:hiddenLabel>Palaeocaen</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Thanetian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Danian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Selandian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Thanetian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Danian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Eocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Eocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Eozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Eocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Eocene</skos:prefLabel>
+	<skos:hiddenLabel>Eocaen</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Tongrian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Auversian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Pleistocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Pleistocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Pleistozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pléistocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pleistocene</skos:prefLabel>
+	<skos:hiddenLabel>Pleistocaen</skos:hiddenLabel>
+	<skos:changeNote xml:lang="en">base moved back in 2009 to encompass the Gelasian</skos:changeNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Pleistocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Pleistocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Holocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Holocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Holocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Holozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Holocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Olocene</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Jungquartär</skos:altLabel>
+	<skos:hiddenLabel>Holocaen</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Quaternary">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Würm and Riss</skos:scopeNote>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Quaternary</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittelquartär</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Quaternaire moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Quaternario medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Old_Quaternary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Old_Quaternary">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">older than Riss (mainly Deckenschotter)</skos:scopeNote>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Old Quaternary</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Altquartär</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Quaternaire ancien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Quaternario antico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Quaternary"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Quaternary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Pliocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Pliocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Pliozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pliocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pliocene</skos:prefLabel>
+	<skos:hiddenLabel>Pliocaen</skos:hiddenLabel>
+	<skos:historyNote xml:lang="en">previously part of Quaternary</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Piacenzian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Zanclean"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Piacenzian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Zanclean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Miocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Miocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Miozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Miocène</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Miocene</skos:prefLabel>
+	<skos:hiddenLabel>Miocaen</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Vindobonian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Neogene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Pleistocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Pleistocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühes Pleistozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pléistocène précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Pleistocene</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Altpleistozän</skos:altLabel>
+	<skos:changeNote xml:lang="en">base moved back in 2009 to encompass the Gelasian</skos:changeNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Calabrian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Gelasian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Calabrian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Gelasian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Pleistocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Pleistocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Spätes Pleistozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pléistocène tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Pleistocene</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Jungpleistozän</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Pleistocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Pleistocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittleres Pleistozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pléistocène moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pleistocene Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pleistocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Chibanian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chibanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chibanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Pleistocene"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chibanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Piacenzian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Piacenzian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Plaisancien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Plaisancien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Piacenziano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">late Pliocene</skos:altLabel>
+	<skos:altLabel xml:lang="de">spätes Pliozän</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Zanclean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Gelasian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Zanclean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Zanclean</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Zancléen</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Zancléen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Zancleano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">early Pliocene</skos:altLabel>
+	<skos:altLabel xml:lang="de">frühes Pliozän</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Messinian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Piacenzian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Calabrian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Calabrian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Calabrien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Calabrien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Calabriano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Gelasian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chibanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Gelasian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Gelasian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Gélasien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Gélasien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Gelasiano</skos:prefLabel>
+	<skos:changeNote xml:lang="en">moved to Quaternary in 2009</skos:changeNote>
+	<skos:historyNote xml:lang="en">previously part of Pliocene</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Piacenzian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Calabrian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pleistocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Chibanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Chibanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Chibanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Chibanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Chibaniano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Mittelpleistozän</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Calabrian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pleistocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Miocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Miocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühes Miozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Miocène précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Miocene</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Aquitanian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aquitanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Miocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Miocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Spätes Miozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Miocène tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Miocene</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Messinian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Tortonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Pontian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Messinian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tortonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Miocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Miocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittleres Miozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Miocène moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Miocene Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Serravallian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Langhian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Helvetian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serravallian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Langhian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Vindobonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Vindobonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Vindobonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Vindobonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Vindoboniano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Vindobon</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Messinian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Messinian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Messinien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Messinien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Messiniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tortonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Zanclean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Tortonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Tortonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tortonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tortonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tortoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serravallian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Messinian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Chattian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Chattian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Chattien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Chattien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Chattiano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">late Oligocene</skos:altLabel>
+	<skos:altLabel xml:lang="de">spätes Oligozän</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#early_Chattian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#late_Chattian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Chattian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Rupelian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Chattian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aquitanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Rupelian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Rupelian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Rupélien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Rupélien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Rupeliano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">early Oligocene</skos:altLabel>
+	<skos:altLabel xml:lang="de">frühes Oligozän</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Stampian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Stampian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Stampien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Stampien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Stampiano</skos:prefLabel>
+	<skos:hiddenLabel>Stampische Stufe</skos:hiddenLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Sannoisian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Sannoisian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Sannoisien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sannoisien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Sannoisiano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Oligocene"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Rupelian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Burdigalian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Burdigalian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Burdigalien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Burdigalien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Burdigaliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#early_Burdigalian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#late_Burdigalian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Burdigalian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aquitanian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Burdigalian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Langhian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Aquitanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Aquitanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Aquitanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Aquitanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Aquitaniano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">previously part of Oligocene</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Pontian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Pontian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Pontien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pontien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pontiano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Miocene"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Messinian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Serravallian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Serravallian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Serravallien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Serravallien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Serravalliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Langhian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tortonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Langhian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Langhian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Langhien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Langhien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Langhiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serravallian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Helvetian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Helvetian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Helvetien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Helvétien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Elveziano</skos:prefLabel>
+	<skos:hiddenLabel>Helvetische Stufe</skos:hiddenLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Miocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#early_Burdigalian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">early Burdigalian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Burdigalien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Burdigalien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">primo Burdigaliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Burdigalian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#late_Burdigalian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Burdigalian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Burdigalien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Burdigalien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">tardo Burdigaliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Burdigalian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Burdigalian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#early_Chattian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">early Chattian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Chattien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Chattien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">primo Chattiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Chattian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#late_Chattian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Chattian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Chattien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Chattien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">tardo Chattiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Chattian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Chattian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Cretaceous">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Cretaceous</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Späte Kreide</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Crétacé tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Cretaceo</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Spätkreide</skos:altLabel>
+	<skos:hiddenLabel>Oberkreide</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Maastrichtian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Cenomanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Campanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Santonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Coniacian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Turonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Senonian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Maastrichtian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenomanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Cretaceous">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Cretaceous</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühe Kreide</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Crétacé précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Cretaceo</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Frühkreide</skos:altLabel>
+	<skos:hiddenLabel>Unterkreide</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Albian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Berriasian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Aptian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Barremian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Hauterivian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Valanginian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Neocomian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Albian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Berriasian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#middle_Cretaceous">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">middle Cretaceous</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">mittlere Kreide</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Crétacé moyen</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Thanetian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Thanetian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Thanétien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Thanétien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Thanetiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Selandian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ypresian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Danian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Danian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Danien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Danien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Daniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Maastrichtian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Selandian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Selandian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Selandian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Sélandien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sélandien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Selandiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Paleocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Danian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Thanetian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#early_Eocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">early Eocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Eozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Eocène précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">primo Eocene</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Ypresian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ypresian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ypresian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ypresian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#late_Eocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Eocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Eozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Eocène tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">tardo Eocene</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#middle_Eocene">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">middle Eocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">mittleres Eozän</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Eocène moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Eocene medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Bartonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Lutetian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bartonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lutetian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Tongrian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Tongrian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tongrien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tongrien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tongriano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Auversian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Auversian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Auversien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Auversien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Auversiano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Eocene"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Bartonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Priabonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Priabonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Priabonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Priabonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Priaboniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#early_Priabonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#late_Priabonian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Priabonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bartonian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Priabonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Rupelian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Eocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#early_Priabonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">early Priabonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Priabonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Priabonien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">primo Priaboniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Priabonian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#late_Priabonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Priabonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Priabonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Priabonien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">tardo Priaboniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Priabonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Bartonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Bartonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Bartonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bartonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Bartoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lutetian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Priabonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Ypresian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Ypresian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Yprésien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Yprésien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Ypresiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Thanetian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lutetian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Eocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Lutetian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Lutetian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Lutétien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Lutétien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Luteziano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ypresian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bartonian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#middle_Eocene"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Maastrichtian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Maastrichtian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Maastrichtien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Maastrichtien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Maastrichtiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Campanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Danian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Cenomanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Cenomanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Cénomanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Cénomanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Cenomaniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Albian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Turonian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Campanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Campanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Campanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Campanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Campaniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Santonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Maastrichtian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Santonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Santonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Santonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Santonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Santoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Coniacian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Campanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Coniacian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Coniacian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Coniacien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Coniacien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Coniaciano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Turonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Santonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Turonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Turonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Turonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Turonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Turoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenomanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Coniacian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Senonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Senonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Senonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sénonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Senoniano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Senon</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Triassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Triassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Späte Trias</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Trias tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Triassico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Rhaetian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Carnian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Norian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Rhaetian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carnian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Triassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Triassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühe Trias</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Trias précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Triassico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Olenekian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Induan"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Olenekian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Induan"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Triassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Triassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittlere Trias</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Trias moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Triassico Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Ladinian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Anisian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ladinian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Anisian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Werfenian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Werfenian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Werfenien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Werfénien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Werfeniano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Werfen</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Scythian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Scythian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Scythien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Scythien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Scitiano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Skyth</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Permian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Permian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Perm</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Permien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Permiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Thuringian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Saxonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Autunian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Jurassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Jurassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Später Jura</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Jurassique tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Giurassico</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Spätjura</skos:altLabel>
+	<skos:hiddenLabel>Malm</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Tithonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Oxfordian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Kimmeridgian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Portlandian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tithonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oxfordian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Jurassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Jurassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Früher Jura</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Jurassique précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Giurassico</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Frühjura</skos:altLabel>
+	<skos:hiddenLabel>Lias</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Toarcian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Hettangian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Sinemurian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Toarcian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hettangian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Jurassic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Jurassic</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittlerer Jura</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Jurassique moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Giurassico Medio</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Mitteljura</skos:altLabel>
+	<skos:hiddenLabel>Dogger</skos:hiddenLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Callovian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Aalenian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Bathonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Bajocian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Callovian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aalenian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Albian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Albian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Albien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Albien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Albiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aptian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cenomanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Berriasian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Berriasian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Berriasien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Berriasien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Berriasiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tithonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Valanginian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Aptian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Aptian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Aptien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Aptien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Aptiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Barremian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Albian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Barremian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Barremian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Barrémien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Barrémien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Barremiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hauterivian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aptian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Hauterivian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Hauterivian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Hauterivien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Hauterivien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Hauteriviano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Valanginian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Barremian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Valanginian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Valanginian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Valanginien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Valanginien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Valanginiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Berriasian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hauterivian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Neocomian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Neocomian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Neocomien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Néocomien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Neocomiano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Neokom</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Cretaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Tithonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Tithonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tithonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tithonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Titoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kimmeridgian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Berriasian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Oxfordian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Oxfordian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Oxfordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Oxfordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Oxfordiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Callovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kimmeridgian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Kimmeridgian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Kimmeridgian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Kimméridgien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Kimméridgien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Kimmeridgiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oxfordian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tithonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Portlandian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Portlandian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Portlandien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Portlandien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Portlandiano</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Portland</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Jurassic"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Tithonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Toarcian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Toarcian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Toarcien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Toarcien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Toarciano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aalenian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Hettangian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Hettangian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Hettangien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Hettangien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Hettangiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Rhaetian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Sinemurian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Pliensbachian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Pliensbachian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Pliensbachien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pliensbachien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pliensbachiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Carixian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Domerian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Domerian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Sinemurian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carixian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Toarcian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Sinemurian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Sinemurian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Sinémurien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sinémurien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Sinemuriano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Jurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Lotharingian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hettangian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Callovian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Callovian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Callovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Callovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Calloviano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bathonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Oxfordian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Aalenian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Aalenian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Aalénien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Aalénien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Aaleniano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">previously part of Early Jurassic</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Toarcian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bajocian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Bathonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Bathonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Bathonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bathonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Bathoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bajocian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Callovian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Bajocian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Bajocian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Bajocien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bajocien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Bajociano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Jurassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Aalenian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bathonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Rhaetian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Rhaetian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Rhät</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Rhétien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Retico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Norian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Hettangian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Carnian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Carnian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Carnien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Carnien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Carnico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ladinian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Norian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Norian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Norian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Norien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Norien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Norico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carnian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Rhaetian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Carixian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Carixian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Carixien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Carixien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Carixiano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">early Pliensbachian</skos:altLabel>
+	<skos:altLabel xml:lang="de">frühes Pliensbachien</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Domerian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Domerian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Domerian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Domérien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Domérien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Domeriano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">late Pliensbachian</skos:altLabel>
+	<skos:altLabel xml:lang="de">spätes Pliensbachien</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carixian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pliensbachian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Lotharingian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Lotharingian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Lotharingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Lotharingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Lotaringiano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Sinemurian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Lopingian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Lopingian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Lopingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Lopingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Lopingiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Changhsingian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Wuchiapingian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Changhsingian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wuchiapingian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Cisuralian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Cisuralian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Cisuralien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Cisuralien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Cisuraliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Kungurian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Asselian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Artinskian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Sakmarian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kungurian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Asselian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Guadalupian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Guadalupian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Guadalupien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Guadalupien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Guadalupiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Capitanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Roadian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Wordian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Capitanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Roadian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Thuringian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Thuringian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Thuringien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Thuringien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Turingiano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">late Permian</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Saxonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Saxonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Saxonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Saxonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Saxoniano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">middle Permian</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Autunian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Autunian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Autunien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Autunien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Autuniano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">early Permian</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Carboniferous">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Carboniferous</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Karbon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Carbonifère</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Carbonifero</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Silesian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Dinantian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Permian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Olenekian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Olenekian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Olénékien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Olénékien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Olenekiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Induan"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Anisian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Induan">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Induan</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Indusien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Indusien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Induano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Changhsingian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Olenekian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Ladinian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Ladinian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ladinien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ladinien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Ladinico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Anisian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carnian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Anisian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Anisian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Anisien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Anisien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Anisico</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Olenekian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ladinian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Triassic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Changhsingian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Changhsingian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Changhsingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Changhsingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Changhsingiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wuchiapingian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Induan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Wuchiapingian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Wuchiapingian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Wuchiapingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Wuchiapingien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Wuchiapingiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Capitanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Changhsingian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Lopingian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Silurian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Silurian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Silur</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Silurien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Siluriano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Pridoli"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Llandovery"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Ludlow"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Wenlock"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pridoli"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Llandovery"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Cambrian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Cambrian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Kambrium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Cambrien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Cambriano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Ordovician">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Ordovician</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ordovizium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ordovicien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Ordoviciano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#early_Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Ordovician"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Ordovician"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Ordovician"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Ordovician"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cambrian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Ordovician"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Devonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Devonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Devon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Dévonien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Devoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Devonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Devonian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Devonian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Devonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Devonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#period"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#late_Paleozoic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Devonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Devonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Spätes Devon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Dévonien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Devoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Devonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Devonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Devonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühes Devon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Dévonien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Devoniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pridoli"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Devonian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Devonian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Devonian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittleres Devon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Dévonien moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Devoniano Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Devonian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Devonian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Devonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Pennsylvanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Pennsylvanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Pennsylvanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pennsylvanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pennsylvaniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Mississippian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Mississippian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mississippien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Mississippien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Mississippiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Devonian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Silesian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Silesian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Silesien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Silésien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Silesiano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">late Carboniferous</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Stephanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Westphalian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Namurian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Dinantian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Dinantian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Dinantien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Dinantien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Dinantiano</skos:prefLabel>
+	<skos:altLabel xml:lang="en">early Carboniferous</skos:altLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Kungurian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Kungurian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Kungurien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Koungourien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Kunguriano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Artinskian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Roadian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Asselian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Asselian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Asselien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Assélien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Asseliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Gzhelian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Sakmarian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Artinskian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Artinskian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Artinskien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Artinskien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Artinskiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Sakmarian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kungurian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Sakmarian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Sakmarian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Sakmarien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sakmarien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Sakmariano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Cisuralian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Asselian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Artinskian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Capitanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Capitanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Capitanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Capitanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Capitaniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wordian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wuchiapingian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Roadian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Roadian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Roadien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Roadien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Roadiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kungurian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wordian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Wordian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Wordian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Wordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Wordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Wordiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Guadalupian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Roadian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Capitanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Pennsylvanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Pennsylvanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühes Pennsylvanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pennsylvanien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Pennsylvaniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Bashkirian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bashkirian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bashkirian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bashkirian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Pennsylvanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Pennsylvanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Spätes Pennsylvanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pennsylvanien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Pennsylvaniano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Gzhelian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Kasimovian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Gzhelian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kasimovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Pennsylvanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Pennsylvanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittleres Pennsylvanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pennsylvanien moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pennsylvaniano Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Moscovian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Moscovian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Moscovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Moscovian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Gzhelian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Gzhelian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Gzhélien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Gzhélien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Gzheliano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kasimovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Asselian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Kasimovian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Kasimovian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Kasimovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Kasimovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Kasimoviano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Moscovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Gzhelian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Mississippian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Mississippian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Spätes Mississippien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Mississippien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Mississippiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Serpukhovian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serpukhovian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serpukhovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serpukhovian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Mississippian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Mississippian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühes Mississippien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Mississippien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Mississippiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Tournaisian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tournaisian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tournaisian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tournaisian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Mississippian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Mississippian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittleres Mississippien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Mississippien moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Mississippiano Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Mississippian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch#Visean"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Visean"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Visean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#sub-epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Visean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Bashkirian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Bashkirian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Bashkirien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bashkirien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Bashkiriano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serpukhovian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Moscovian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Pennsylvanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Moscovian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Moscovian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Moscovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Moscovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Moscoviano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bashkirian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Kasimovian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Pennsylvanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Serpukhovian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Serpukhovian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Serpukhovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Serpukhovien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Serpukhoviano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Visean"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Bashkirian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Mississippian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Visean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Visean</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Viséen</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Viséen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Viseano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Tournaisian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Serpukhovian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Mississippian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Tournaisian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Tournaisian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tournaisien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tournaisien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tournaisiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#stage"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Visean"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Mississippian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Pridoli">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Pridoli</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Pridoli</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pridoli</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Pridoli</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ludlow"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Devonian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Llandovery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Llandovery</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Llandovery</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Llandovery</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Llandovery</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Ordovician"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wenlock"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Ludlow">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Ludlow</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ludlow</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ludlow</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Ludlow</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Wenlock"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Pridoli"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Wenlock">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Wenlock</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Wenlock</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Wenlock</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Wenlock</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silurian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Llandovery"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ludlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Late_Ordovician">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Late Ordovician</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Spätes Ordovizium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ordovicien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Tardo Ordoviciano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Ordovician"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Llandovery"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Early_Ordovician">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Early Ordovician</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Frühes Ordovizium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ordovicien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Primo Ordoviciano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Middle_Ordovician"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Middle_Ordovician">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Middle Ordovician</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Mittleres Ordovizium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ordovicien moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Ordoviciano Medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Ordovician"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Early_Ordovician"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#epoch"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Late_Ordovician"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Hadean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Hadean</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Hadaikum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Hadéen</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Adeano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Precambrian"/>
+	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch#eon"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Archean"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch#Precambrian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Stephanian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Stephanian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Stephanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Stéphanien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Stefaniano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silesian"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Late_Pennsylvanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Westphalian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Westphalian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Westphalien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Westphalien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Westfaliano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silesian"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Pennsylvanian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch#Namurian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch#Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">Namurian</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Namurien</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Namurien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Namuriano</skos:prefLabel>
+	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch#Silesian"/>
+	<skos:related rdf:resource="https://lexic.swissgeol.ch#Carboniferous"/>
+</rdf:Description>
+
+</rdf:RDF>
