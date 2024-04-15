@@ -19,6 +19,6 @@ jobs:
         env:
           FILE_PATH: ./chronostratigrafie.rdf # percorso del file che vuoi caricare
           PUT_URL: https://dev-graphdbgps.swissgeol.ch/publish/chronostratigraphy_swisstopo_public_core?context=https://lexic.swissgeol.ch
-          TOKEN: ${{ secrets.LEXIC_CONTROLLED_VOCABULARIES_GRAPHDB_GPS_TOKEN }}
+          TOKEN: ${{ secrets.LEXIC_GITHUB_PUBLISHING_SERVICE_TOKEN }}
         run: |
           curl -X PUT -T $FILE_PATH -H "Authorization: Bearer $TOKEN" $PUT_URL
