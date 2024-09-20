@@ -21,4 +21,10 @@ jobs:
           PUT_URL: https://dev-graphdbgps.swissgeol.ch/publish/chronostratigraphy_swisstopo_public_core?context=https://lexic.swissgeol.ch/Chronostratigraphy/
           TOKEN: ${{ secrets.LEXIC_CONTROLLED_VOCABULARIES_GRAPHDB_GPS_TOKEN }}
         run: |
-          curl -X PUT -T $FILE_PATH -H "Authorization: Bearer $TOKEN" $PUT_URL
+          response=$(curl -w "%{http_code}" -X PUT -T $FILE_PATH -H "Authorization: Bearer $TOKEN" $PUT_URL -o response.txt)
+          if [[ "$response" -ge 200 && "$response" -lt 300 ]]; then
+            echo "Upload successful: HTTP $response"
+          else
+            echo "Upload failed: HTTP $response"
+            exit 1
+          fi
