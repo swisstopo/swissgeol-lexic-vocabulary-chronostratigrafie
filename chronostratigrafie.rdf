@@ -16,6 +16,7 @@
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Phanerozoic">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The Phanerozoic (approx. from 539 Ma ago to the Present) is the main (though not the longest) eon of Earth history, encompassing the Paleozoic, Mesozoic and Cenonoic eras.</skos:definition>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:topConceptOf rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Phanerozoic</skos:prefLabel>
@@ -573,6 +574,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:prefLabel xml:lang="de">Pleistozän</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">Pléistocène</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Pleistocene</skos:prefLabel>
+	<skos:altLabel xml:lang="de">Eiszeitalter</skos:altLabel>
 	<skos:hiddenLabel>Pleistocaen</skos:hiddenLabel>
 	<skos:hiddenLabel xml:lang="de">Diluvium</skos:hiddenLabel>
 	<skos:changeNote xml:lang="en">base moved back in 2009 to encompass the Gelasian</skos:changeNote>
@@ -599,6 +601,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:prefLabel xml:lang="fr">Holocène</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Olocene</skos:prefLabel>
 	<skos:altLabel xml:lang="de">Jungquartär</skos:altLabel>
+	<skos:altLabel xml:lang="de">Nacheiszeit</skos:altLabel>
 	<skos:hiddenLabel>Holocaen</skos:hiddenLabel>
 	<skos:hiddenLabel xml:lang="de">Alluvium</skos:hiddenLabel>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Quaternary"/>
