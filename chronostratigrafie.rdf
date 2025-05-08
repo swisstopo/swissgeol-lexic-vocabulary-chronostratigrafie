@@ -37,6 +37,9 @@
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
 	<skos:prefLabel xml:lang="en">Chronostratigraphy</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Chronostratigraphie</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Cronostratigrafia</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Chronostratigraphie</skos:prefLabel>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Paleozoic">
@@ -47,8 +50,9 @@
 	<skos:prefLabel xml:lang="de">Paläozoikum</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">Paléozoïque</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Paleozoico</skos:prefLabel>
-	<skos:altLabel xml:lang="en">Primary</skos:altLabel>
-	<skos:altLabel xml:lang="de">Primär</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Primary</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="de">Primär</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="fr">Primaire</skos:hiddenLabel>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Phanerozoic"/>
 	<skos:narrower rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/early_Paleozoic"/>
 	<skos:narrower rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/late_Paleozoic"/>
@@ -92,8 +96,9 @@
 	<skos:prefLabel xml:lang="de">Mesozoikum</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">Mésozoïque</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Mesozoico</skos:prefLabel>
-	<skos:altLabel xml:lang="en">Secondary</skos:altLabel>
-	<skos:altLabel xml:lang="de">Sekundär</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Secondary</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="de">Sekundär</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="fr">Secondaire</skos:hiddenLabel>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Phanerozoic"/>
 	<skos:narrower rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Cretaceous"/>
 	<skos:narrower rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Triassic"/>
@@ -172,6 +177,7 @@
 	<skos:prefLabel xml:lang="de">Paläogen</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">Paléogène</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Paleogene</skos:prefLabel>
+	<skos:hiddenLabel xml:lang="de">Alttertiär</skos:hiddenLabel>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Cenozoic"/>
 	<skos:narrower rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Oligocene"/>
 	<skos:narrower rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Paleocene"/>
@@ -232,6 +238,7 @@
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Tertiary">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Tertiary</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Tertiär</skos:prefLabel>
@@ -239,7 +246,7 @@
 	<skos:prefLabel xml:lang="it">Terziario</skos:prefLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Cenozoic"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Cretaceous">
@@ -614,6 +621,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Middle_Quaternary">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:scopeNote xml:lang="en">Würm and Riss</skos:scopeNote>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Middle Quaternary</skos:prefLabel>
@@ -623,11 +631,12 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Quaternary"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Pleistocene"/>
 	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Old_Quaternary"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Old_Quaternary">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:scopeNote xml:lang="en">older than Riss (mainly Deckenschotter)</skos:scopeNote>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Old Quaternary</skos:prefLabel>
@@ -636,7 +645,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:prefLabel xml:lang="it">Quaternario antico</skos:prefLabel>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Quaternary"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Pleistocene"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Middle_Quaternary"/>
 </rdf:Description>
 
@@ -747,6 +756,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/middle_Cretaceous">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:definition xml:lang="en">The «middle Cretaceous» is an obsolete geochronologic subdivision of the Cretaceous period.</skos:definition>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">middle Cretaceous</skos:prefLabel>
@@ -755,11 +765,12 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:prefLabel xml:lang="it">Cretacico medio</skos:prefLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Cretaceous"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Werfenian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Werfenian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Werfenien</skos:prefLabel>
@@ -769,11 +780,12 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Triassic"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Early_Triassic"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Scythian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Scythian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Scythien</skos:prefLabel>
@@ -783,7 +795,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Triassic"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Early_Triassic"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Late_Triassic">
@@ -965,6 +977,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Stampian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Stampian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Stampien</skos:prefLabel>
@@ -973,11 +986,12 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:hiddenLabel>Stampische Stufe</skos:hiddenLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Oligocene"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Sannoisian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Sannoisian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Sannoisien</skos:prefLabel>
@@ -986,7 +1000,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Oligocene"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Rupelian"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Thanetian">
@@ -1038,6 +1052,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Tongrian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Tongrian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Tongrien</skos:prefLabel>
@@ -1046,11 +1061,12 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Eocene"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Priabonian"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Auversian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Auversian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Auversien</skos:prefLabel>
@@ -1059,7 +1075,7 @@ Tectonically it is a rather quiet period inbetween the Variscan and Alpine oroge
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Eocene"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Bartonian"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/early_Eocene">
@@ -1215,6 +1231,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Vindobonian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Vindobonian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Vindobonien</skos:prefLabel>
@@ -1223,7 +1240,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:altLabel xml:lang="de">Vindobon</skos:altLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Miocene"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Early_Miocene">
@@ -1405,6 +1422,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Pontian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Pontian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Pontien</skos:prefLabel>
@@ -1413,7 +1431,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Late_Miocene"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Messinian"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Serravallian">
@@ -1458,7 +1476,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:hiddenLabel>Helvetische Stufe</skos:hiddenLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Middle_Miocene"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/early_Chattian">
@@ -1633,6 +1651,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Senonian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Senonian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Senonien</skos:prefLabel>
@@ -1641,7 +1660,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:altLabel xml:lang="de">Senon</skos:altLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Late_Cretaceous"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Albian">
@@ -1738,6 +1757,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Neocomian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Neocomian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Neocomien</skos:prefLabel>
@@ -1746,7 +1766,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:altLabel xml:lang="de">Neokom</skos:altLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Early_Cretaceous"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Ypresian">
@@ -2090,6 +2110,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Portlandian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Portlandian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Portlandien</skos:prefLabel>
@@ -2099,7 +2120,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Late_Jurassic"/>
 	<skos:related rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Tithonian"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Toarcian">
@@ -2271,6 +2292,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Lotharingian">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 	<skos:inScheme rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy"/>
 	<skos:prefLabel xml:lang="en">Lotharingian</skos:prefLabel>
 	<skos:prefLabel xml:lang="de">Lotharingien</skos:prefLabel>
@@ -2278,7 +2300,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:prefLabel xml:lang="it">Lotaringiano</skos:prefLabel>
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Sinemurian"/>
-	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/active"/>
+	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://dev-lexic.swissgeol.ch/historic"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://dev-lexic.swissgeol.ch/Chronostratigraphy/Changhsingian">
