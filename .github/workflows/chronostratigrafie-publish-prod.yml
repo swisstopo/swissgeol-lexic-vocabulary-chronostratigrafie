@@ -20,11 +20,6 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
-      - name: Replace baseurl in RDF file to address INT environment
-        run: |
-          FILE_PATH="./chronostratigrafie.rdf"
-          sed -i 's/dev-lexic.swissgeol.ch/lexic.swissgeol.ch/g' "$FILE_PATH"
-
       - name: Upload file via PUT to graphdb-gps
         env:
           FILE_PATH: ./chronostratigrafie.rdf # percorso del file che vuoi caricare
