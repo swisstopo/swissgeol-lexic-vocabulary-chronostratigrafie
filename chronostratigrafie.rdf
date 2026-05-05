@@ -143,6 +143,7 @@
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Ordovician"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Cambrian"/>
 	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Silurian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Proterozoic"/>
 	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Cambrian"/>
 	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/sub-era"/>
 	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://lexic.swissgeol.ch/active"/>
@@ -167,6 +168,7 @@
 	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Devonian"/>
 	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/sub-era"/>
 	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://lexic.swissgeol.ch/active"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Mesozoic"/>
 	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Paleozoic"/>
 </rdf:Description>
 
@@ -1573,6 +1575,8 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Miocene"/>
 	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://lexic.swissgeol.ch/historic"/>
+	<dct:isReplacedBy rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/LateMiocene"/>
+	<dct:isReplacedBy rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/MiddleMiocene"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyMiocene">
@@ -1938,6 +1942,7 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:historyNote xml:lang="en">historical concept, no longer in use</skos:historyNote>
 	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/MiddleMiocene"/>
 	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://lexic.swissgeol.ch/historic"/>
+	<dct:isReplacedBy rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/MiddleMiocene"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyPriabonian">
@@ -2488,8 +2493,13 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:prefLabel xml:lang="fr">Oxfordien</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Oxfordiano</skos:prefLabel>
 	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/LateJurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/earlyOxfordian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/middleOxfordian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/lateOxfordian"/>
 	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Oxfordian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/lateOxfordian"/>
 	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Callovian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/earlyOxfordian"/>
 	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/stage"/>
 	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://lexic.swissgeol.ch/active"/>
 	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Kimmeridgian"/>
@@ -2536,8 +2546,13 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<skos:prefLabel xml:lang="fr">Toarcien</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">Toarciano</skos:prefLabel>
 	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyJurassic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/LateToarcian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/MiddleToarcian"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyToarcian"/>
 	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Toarcian"/>
+	<intervalFinishedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/lateToarcian"/>
 	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Pliensbachian"/>
+	<intervalStartedBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/earlyToarcian"/>
 	<rank xmlns="http://resource.geosciml.org/ontology/timescale/gts#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/stage"/>
 	<status xmlns="http://www.w3.org/ns/adms#" rdf:resource="https://lexic.swissgeol.ch/active"/>
 	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Aalenian"/>
@@ -2948,6 +2963,82 @@ In Switzerland the age of the Hochterrasse deposits roughly coincides with the M
 	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyMississippian"/>
 	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyMississippian"/>
 	<intervalEquals xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyMississippian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/LateToarcian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Toarcian</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Toarcien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Toarciano tardo</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Toarcien</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Toarcian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/middleToarcian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Aalenian"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Toarcian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/MiddleToarcian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="fr">Toarcien moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">mittleres Toarcien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Toarciano medio</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">middle Toarcian</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Toarcian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/earlyToarcian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/lateToarcian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/EarlyToarcian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="fr">Toarcien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Toarcien</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">early Toarcian</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">primo Toarciano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Toarcian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Domerian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/middleToarcian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Toarcian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/earlyOxfordian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">early Oxfordian</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Oxfordien précoce</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">frühes Oxfordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">primo Oxfordiano</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Oxfordian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Callovian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/middleOxfordian"/>
+	<intervalStarts xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Oxfordian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/middleOxfordian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">middle Oxfordian</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Oxfordien moyen</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">mittleres Oxfordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Oxfordiano medio</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Oxfordian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/earlyOxfordian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/lateOxfordian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/Chronostratigraphy/lateOxfordian">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy"/>
+	<skos:prefLabel xml:lang="en">late Oxfordian</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Oxfordien tardif</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">spätes Oxfordien</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">Oxfordiano tardo</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Oxfordian"/>
+	<intervalMetBy xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/middleOxfordian"/>
+	<intervalMeets xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Kimmeridgian"/>
+	<intervalFinishes xmlns="http://www.w3.org/2006/time#" rdf:resource="https://lexic.swissgeol.ch/Chronostratigraphy/Oxfordian"/>
 </rdf:Description>
 
 </rdf:RDF>
